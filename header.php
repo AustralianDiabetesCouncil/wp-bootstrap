@@ -23,20 +23,6 @@
     <![endif]-->
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/style.css"> 
- 
-<?php
-    /* 
-     *  Add this to support sites with sites with threaded comments enabled.
-     */
-    if ( is_singular() && get_option( 'thread_comments' ) )
-        wp_enqueue_script( 'comment-reply' );
-
-    wp_get_archives('type=monthly&format=link');
- 
-    wp_head();
-?>
-
-
 </head>
 
 <!-- Google Tag Manager -->
@@ -106,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="row">
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -122,9 +108,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
             'menu_class'        => 'nav navbar-nav',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
+
         ); 
       ?>
 

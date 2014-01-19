@@ -106,48 +106,7 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
-        <!-- New Menu July 2013 -->
-<script>
-    jQuery(document).ready(function() {
-        var navToggle = jQuery('.menu'),
-          navWrap = jQuery('.main-nav-wrap'),
-          header = jQuery('#header'),
-          headerWrap = jQuery('.header-wrap'),
-          winWidth = jQuery(window).outerWidth(),
-          search = jQuery('.search'),
-          navToggleWrap = jQuery('.main-nav-toggle');
-
-        navToggle.on('click', function() {
-          navWrap.toggleClass('show');
-          header.toggleClass('nav-active');
-        });
-
-        if ( winWidth <= 680 ) {
-          navWrap.after(search);
-        } else {
-          navToggleWrap.before(search);
-        }
-    });
-
-    jQuery(window).resize(function() {
-        var winWidth = jQuery(window).outerWidth(),
-          mainNavWrap = jQuery('.main-nav-wrap'),
-          header = jQuery('#header'),
-          headerWrap = jQuery('.header-wrap'),
-          search = jQuery('.search'),
-          navToggle = jQuery('.main-nav-toggle');
-
-        if ( winWidth <= 680 ) {
-          mainNavWrap.removeClass('show');
-          header.removeClass('nav-active');
-          mainNavWrap.after(search);
-        } else {
-          navToggle.before(search);
-          mainNavWrap.removeClass('show');
-          header.removeClass('nav-active');
-        }
-    });
-</script>
+        
   <script>
 // clicking submit button
 jQuery('#search-button').click(function() {
