@@ -22,7 +22,6 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/carousel.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/style.css"> 
  
 <?php
@@ -101,11 +100,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    
     </div> <!--row end-->
     </header>
-  </div><!-- end header-wrap -->
+  </div>
+  <!-- end header-wrap -->
 
   <div class="row">
     <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -115,58 +114,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </button>
       </div>
 
-
-    
     <div class="col-md-offset-2 ">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-          <ul class="nav navbar-nav">
-                <li class="active" class="menu-item">
-                    <a href="http://www.australiandiabetescouncil.com/living-with-diabetes">Education</a>
-                </li>
-      
-                <li class="menu-item">
-                    <a href="http://www.australiandiabetescouncil.com/blog/category/recipe/">Recipes</a>
-                </li>
-                <li class="menu-item">
-                    <a href="http://shop.australiandiabetescouncil.com/">Shop</a>
-                </li>
-                <li class="menu-item">
-                    <a href="http://www.australiandiabetescouncil.com/events">In Your Community</a>
-                </li>
-                <li class="menu-item">
-                    <a href="http://www.australiandiabetescouncil.com/resources">Health Professionals</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">NEWS</a>
-                </li>
-                  <li class="menu-item visible-xs">
-                    <a href="#">Membership</a>
-                  </li>
-                <li class="menu-item visible-xs">
-                    <a href="#">Donate</a>
-                </li>
-            </ul>
-     </div>
-   </div><!-- /.navbar-collapse -->
+          <?php  /* menu */
+          wp_nav_menu( array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary-menu',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+        ); 
+      ?>
+
     </nav>
 </div>
-
-
-<!-- implment the menu
-            <div class="navbar-collapse collapse">
-         	<?php  /* menu */
-         	wp_nav_menu( array(
-        		'menu'              => 'primary',
-        		'theme_location'    => 'primary-menu',
-        		'depth'             => 2,
-        		'container'         => 'div',
-        		'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-        		'menu_class'        => 'nav navbar-nav',
-        		'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-        		'walker'            => new wp_bootstrap_navwalker())
-    		); 
-			?>
-            </div>
-
-            -->
