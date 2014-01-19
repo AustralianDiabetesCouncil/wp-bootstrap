@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
- 
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <?php if ( is_search() ) { ?>
+    <meta name="robots" content="noindex, nofollow" /> 
+  <?php } ?>
+  
+  <title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
+  <meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
+  <meta name="description" content="<?php bloginfo('description'); ?>">
+  
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
-<link href="<?php bloginfo('template_directory'); ?>/carousel.css" rel="stylesheet">
-
-<link href='http://fonts.googleapis.com/css?family=Buenard:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/carousel.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/style.css"> 
  
 <?php
     /* 
@@ -31,26 +36,124 @@
  
     wp_head();
 ?>
-</head>
-<body>
-<div class="navbar-wrapper">
-      <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+
+</head>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-XQ9S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XQ9S');</script>
+<!-- End Google Tag Manager -->
+
+
+<body>
+
+<div class="header-wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="http://www.australiandiabetescouncil.com">Australian Diabetes Council</a>
+      </h1>
+
+    <div class="row secondary-menu">
+      <div class="main-nav-toggle">
+          <a href="#" class="menu">&#9776;</a>
+      </div>
+
+      <div class="search col-md-offset-2 col-sm-5">
+          <div class="search-wrap">
+              <form id="search-form" action="http://www.australiandiabetescouncil.com/search-results">
+                  <label for="q" id="search-label" class="screen-reader">Search</label>
+                  <input aria-labelledby="search-label" id="q" type="search" name="q" class="search-field" placeholder="Search the ADC etwork" value="">
+                  <span class="search-icon"></span>
+                  <input type="button" id="search-button" value="Search" class="button search-button" onClick="window.location='http://ww.australiandiabetescouncil.com/search-results?q=' + this.form.q.value">
+          </form>
+          </div>
+      </div>
+      
+
+     <div class="col-md-3 hidden-xs pull-right">      
+        <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Membership <span class="caret"></span>
               </button>
-              <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
-        		<a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
-			  <?php else : ?>
-        			<a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>
-			  <?php endif; ?>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://australiandiabetescouncil.wufoo.com/forms/w7x3k1/">Become a Member</a>
+                </li>
+                <li>
+                  <a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3w1/">Renew Membership</a>
+                </li>
+                <li>
+                  <a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3s5/">Change Membership Details</a>
+                </li>
+                <li>
+                  <a href="http://www.australiandiabetescouncil.com/membership/fees">Membership Fees</a>
+                </li>
+              </ul>
             </div>
+
+          <button type="button" class="btn btn-success">Donate</button>
+     </div>
+   
+    </div> <!--row end-->
+    </header>
+  </div><!-- end header-wrap -->
+
+  <div class="row">
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+
+    
+    <div class="col-md-offset-2 ">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+          <ul class="nav navbar-nav">
+                <li class="active" class="menu-item">
+                    <a href="http://www.australiandiabetescouncil.com/living-with-diabetes">Education</a>
+                </li>
+      
+                <li class="menu-item">
+                    <a href="http://www.australiandiabetescouncil.com/blog/category/recipe/">Recipes</a>
+                </li>
+                <li class="menu-item">
+                    <a href="http://shop.australiandiabetescouncil.com/">Shop</a>
+                </li>
+                <li class="menu-item">
+                    <a href="http://www.australiandiabetescouncil.com/events">In Your Community</a>
+                </li>
+                <li class="menu-item">
+                    <a href="http://www.australiandiabetescouncil.com/resources">Health Professionals</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">NEWS</a>
+                </li>
+                  <li class="menu-item visible-xs">
+                    <a href="#">Membership</a>
+                  </li>
+                <li class="menu-item visible-xs">
+                    <a href="#">Donate</a>
+                </li>
+            </ul>
+     </div>
+   </div><!-- /.navbar-collapse -->
+    </nav>
+</div>
+
+
+<!-- implment the menu
             <div class="navbar-collapse collapse">
          	<?php  /* menu */
          	wp_nav_menu( array(
@@ -65,9 +168,5 @@
     		); 
 			?>
             </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
-    
+            -->

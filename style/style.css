@@ -1,0 +1,381 @@
+
+h1, h2 {
+	font-family: "Buenard","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+img{
+  width: 100%;
+}
+
+.navbar {
+margin: 0px;
+border-radius: 0px;
+text-transform:uppercase;
+}
+
+/*Events*/
+.datebox {
+width: 25px;
+margin: 0 5px;
+}
+.day {
+font-size: 1.4em;
+}
+
+.media-body{
+  padding-top:3px;
+}
+
+.adclogo{
+    background: url(../img/logo-desktop-2x.png) no-repeat ; 
+    background-position: center;
+    background-size: 120px 162px;
+    width: 120px;
+    height: 162px;
+   }
+
+.secondary-menu{
+  padding-top:15px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+   background: url(../img/ADC-logox2.png) no-repeat ; 
+}
+
+
+ /* trying to make events turn into 2 column on tablets but couldn't make it work*/
+@media (min-width: @screen-sm-min) { 
+
+.eventcolumns
+{
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+}
+
+
+}\
+
+/* New Menu and Footer Aug 2013 */
+html,body{background:#f7fbfd}
+.container-body{
+  box-shadow:none;padding:20px 20px 40px;
+  border:1px solid #c7c7c7;
+  border-bottom:0;background:white
+  }
+
+.carousel{
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none
+}
+
+.header-wrap{
+  position:relative;
+  background:white;
+  z-index:2
+}
+
+
+
+#header{
+  height:66px;
+}
+
+
+
+.logo{
+  position:relative;
+  float:left;margin:0
+}
+
+.logo a{
+  position:relative;
+  text-indent:-9999px;
+  display:block;
+  width:98px;
+  height:67px;
+  background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile.png);
+  background-repeat:no-repeat;
+  background-position:0 center;
+  margin-left:30px;
+}
+
+@media (min-width: 992px){ 
+  .logo a{
+    height:162px;
+    width:120px;
+    background-color:transparent;
+    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-120.png);
+    background-position:center;
+  }
+
+  .logo{
+    position:absolute;
+  }
+
+  #main-nav #menu-main-menu{
+    margin-left:0px
+  }
+  
+  .header-wrap{
+    border-bottom:1px solid #c7c7c7
+  }
+
+  }
+
+@media all and (max-width: 767px){
+  .logo a{
+    margin:0 auto
+  }
+}
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  .logo a{
+    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile-2x.png);
+    background-repeat:no-repeat;
+    background-position:0 center;
+    background-size:98px 50px
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), all and (min-resolution: 192dpi) and (min-width: 992px){
+  .logo a{background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-2x.png);
+    background-position:center;background-size:120px 162px}
+  }
+
+ 
+
+  form{
+    margin:0;
+    position:relative;
+    overflow:hidden
+  }
+
+
+  .search-wrap{
+    position:relative;
+    max-width:510px;
+
+  }
+
+
+
+
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+#q{
+      border:none;
+      padding:6px 10px
+    }
+    #q:focus{border:none}
+  }
+
+.search-wrap{
+  margin:0 auto;
+  clear:both;
+  width:100%;
+  float:none;
+  max-width:100%
+
+  }
+
+ .header-wrap{
+    border-bottom:0;
+  }
+
+ .navbar-header{
+  z-index: 1000;
+  position: relative;
+  top: -55px;
+ }
+}
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+ }
+
+
+
+  .screen-reader{
+    display:none
+  }
+
+  #q{
+    -webkit-appearance:none;
+    box-shadow:none;
+    border:1px solid #ededed;
+    padding:10px 50px 10px 10px;
+    font-size:14px;
+    width:100%;
+    max-width:100%;
+    margin:0;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    height:auto;line-height:1.3em;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+  }
+
+  #q:focus{
+    border:1px solid #cccccc;
+    outline:none;
+  }
+
+  .search-icon{
+    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/search-icon.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    width:20px;
+    height:29px;
+    position:absolute;
+    right:10px;
+    top:5px;
+    z-index:30
+  }
+  
+  .search-icon:hover{
+    cursor:pointer
+  }
+
+  .search .search-wrap #search-button{
+    position:absolute;
+    right:0;
+    top:0;
+    border:0;
+    outline:0;
+    color:white;
+    height:40px;
+    width:40px;
+    margin:0;
+    padding:10px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    border-radius:0;
+    text-indent:-9999px
+  }
+
+
+  .search-wrap input[type="submit"],
+  
+  #search-button{
+    background:#00bce9;
+    }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  .search-icon{background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/search-icon-2x.png);
+    background-size:15px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent}
+  }
+
+.main-nav-toggle,#secondary-nav,#main-nav{
+    position:relative
+    }
+
+  .main-nav-toggle ul,#secondary-nav ul,#main-nav ul{margin:0;padding:0;list-style:none}
+
+  .main-nav-toggle li,#secondary-nav li,#main-nav li{display:inline-block}
+  
+  .main-nav-toggle a,#secondary-nav a,#main-nav a{
+    display:inline-block;
+    color:#5a5a5a;
+    text-decoration:none;
+    font-size:11px;
+    text-shadow:0 1px 0 #fff
+    }
+
+  #secondary-nav{float:right;margin-top:15px}#secondary-nav a,#secondary-nav span{font:400 14px/22px "Helvetica Neue", Helvetica, Arial, sans-serif}#secondary-nav span.phone{padding-right:15px}#secondary-nav .btn.btn-success{padding:4px 15px}
+
+  a{display:block}
+
+
+  .header-wrap #header #secondary-nav button.dropdown-toggle:focus{outline:none}
+  .header-wrap #header #secondary-nav .btn-group{vertical-align:top;margin-right:3px}
+  .header-wrap #header #secondary-nav .btn.btn-success{margin:0;color:white;text-shadow:none;letter-spacing:0px}
+  .header-wrap #header #secondary-nav .dropup,.header-wrap #header #secondary-nav .dropdown{position:relative}
+
+  .main-nav-toggle{float:left;height:67px;display:none}
+  
+
+  .main-nav-toggle a{
+    padding:3px 12px;
+    line-height:67px;
+    background:#0088b2;
+    color:white;
+    text-shadow:none;
+    float-right;
+
+  }
+
+
+
+  
+  .main-nav-wrap{background:#0088B2;position:relative;z-index:1;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;margin-bottom:50px}
+  .main-nav-wrap:after{clear:both;content:'';display:table}
+  .main-nav-wrap.show{margin-top:0}
+
+
+  @media all and (max-width: 680px){.main-nav-wrap{margin-top:-215px;height:215px;overflow:hidden;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;margin-bottom:0}}#main-nav{height:48px;position:relative;width:982px;margin:0 auto}#main-nav:after{clear:both;display:table;content:''}@media all and (min-width: 1200px){#main-nav{width:1212px}}@media (max-width: 979px) and (min-width: 768px){#main-nav{width:726px}}@media (max-width: 767px){#main-nav{width:95%}}@media all and (max-width: 680px){#main-nav{margin:5px 0 0;width:100%;text-align:center;height:auto}}
+
+  #main-nav #menu-main-menu{margin-left:134px}
+
+  @media only screen and (max-width: 1079px){#main-nav #menu-main-menu{margin-left:134px}}
+  
+  #main-nav a{
+    line-height:48px;
+    padding:0 17px;
+    color:white;
+    text-shadow:0 1px 0 #155375;
+    font-size:15px;
+    font-weight:normal;
+    text-transform:uppercase;
+    }
+
+    #main-nav a:hover{opacity:0.8}
+
+    #main-nav a:nth-child(even){background:#0084ad}}.container-body{border-bottom:1px solid #c7c7c7}.footer-outer{margin-top:40px;background:#0088b2}.container-footer{-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important}.footer-wrap{background:#0088b2}#footer{color:white;margin:0 auto;padding:20px 0}#footer a,#footer p{color:white;font-size:13px}#footer ul{margin:0}#footer-blocks{position:relative;overflow:hidden}.footer-block{width:16.6666666666%;position:relative;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-right:20px;padding-bottom:20px;color:white;margin:0 auto}
+  .footer-block.last{padding-right:0;text-align:center}.footer-block.last p{text-align:center;margin-top:16px}.footer-block.last img{height:111px;width:150px}@media all and (max-width: 1079px){.footer-block.last{text-align:center}}@media all and (max-width: 1079px){.footer-block{width:33.333333333%}.footer-block:nth-child(4){clear:both}}@media all and (max-width: 600px){.footer-block{width:50%}.footer-block:nth-child(4){clear:none}.footer-block:nth-child(odd){clear:both}}@media all and (max-width: 480px){.footer-block{width:100%}}.footer-block h3{margin:0 0 8px 0;font:normal bold 15px "Helvetica Neue", Helvetica, Arial, sans-serif;letter-spacing:1px;color:white;padding:0 0 8px;border-bottom:1px solid #dedede}@media all and (max-width: 480px){.footer-block h3{text-align:center}}.footer-block img{max-width:150px}.footer-block ul{list-style:square;padding-left:16px}.footer-block ul li.social-link{list-style:none;margin-left:-16px;padding:5px 0}.footer-block ul li.social-link.youtube{padding:0}.footer-block a:hover{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);opacity:0.8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter:alpha(opacity=80)}.conditions a{padding-right:20px;position:relative;text-decoration:underline}
+  .conditions a:after{content:'|';position:absolute;right:7px;top:-3px}
+  .conditions a:last-child:after{content:'';padding-right:0}.conditions a:hover{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);opacity:0.8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter:alpha(opacity=80)}.social-link i{padding-right:0 !important}
+
+
+
+/* End New Menu and Footer Aug 2013 */
+
+
+
+/* Search styling Aug 2013 */
+.gsc-results-wrapper-nooverlay a[href*=australiandiabetescouncil.com/ADCCorporateSite/]:before{content:'PDF';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
+.gsc-results-wrapper-nooverlay a[href*=australiandiabetescouncil.com/blog]:before{content:'ARTICLE';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
+.gsc-results-wrapper-nooverlay a[href*=shop.australiandiabetescouncil.com]:before{content:'PRODUCT';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
+.gs-image-box a[href*=shop.australiandiabetescouncil.com]:before{content:'';background:transparent;margin:0;padding:0}
+.gsc-table-result,.gsc-thumbnail-inside,.gsc-url-top{padding-left:0!important}
+.gs-title{color:#0088b2!important;text-decoration:none!important;font-size:18px!important;margin-bottom:4px}
+.gs-title b{color:#0088b2!important;font-size:18px!important}
+.gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long{color:#999!important}
+.gs-no-results-result .gs-snippet,.gs-error-result .gs-snippet{font-size:18px!important;padding:10px!important}
+.gs-no-results-result .gs-snippet:before,.gs-error-result .gs-snippet:before{content:'Sorry '}
+.gs-no-results-result .gs-snippet:after,.gs-error-result .gs-snippet:after{content:' Found. Please Try Searching Something Else.'}
+.gsc-results .gsc-cursor-box{margin:15px 10px 10px 0 !important}
+.gsc-cursor-page{-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);-moz-box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:#f0f0f0!important;color:#666!important;padding:7px!important}
+.gs-image:before{content:'';display:none}
+/* End search styling Aug 2013 */
