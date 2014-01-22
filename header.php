@@ -7,13 +7,9 @@
   <?php if ( is_search() ) { ?>
     <meta name="robots" content="noindex, nofollow" /> 
   <?php } ?>
-  
   <title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
   <meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
-  <meta name="description" content="<?php bloginfo('description'); ?>">
-  
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,7 +19,12 @@
     <![endif]-->
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/style.css"> 
+
+
+  
+
 </head>
+
 
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-XQ9S"
@@ -35,64 +36,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-XQ9S');</script>
 <!-- End Google Tag Manager -->
 
-
 <body>
+  
+  <h1 class="logo"><a href="http://www.australiandiabetescouncil.com">Australian Diabetes Council</a></h1>
 
-<div class="header-wrap">
-    <header id="header">
-      <h1 class="logo">
-        <a href="http://www.australiandiabetescouncil.com">Australian Diabetes Council</a>
-      </h1>
+  <header id="header">
+  
+    <div class="hidden-xs top-menu ">
+        <ul class="list-inline pull-right">
+          <li><h4 class="contact-number"> <a href="contact">Contact / 1300 342 238</a> </h4></li>
 
-    <div class="row secondary-menu">
-      <div class="main-nav-toggle">
-          <a href="#" class="menu">&#9776;</a>
-      </div>
-
-      <div class="search col-md-offset-2 col-sm-5">
-          <div class="search-wrap">
-              <form id="search-form" action="http://www.australiandiabetescouncil.com/search-results">
-                  <label for="q" id="search-label" class="screen-reader">Search</label>
-                  <input aria-labelledby="search-label" id="q" type="search" name="q" class="search-field" placeholder="Search the ADC etwork" value="">
-                  <span class="search-icon"></span>
-                  <input type="button" id="search-button" value="Search" class="button search-button" onClick="window.location='http://ww.australiandiabetescouncil.com/search-results?q=' + this.form.q.value">
-          </form>
-          </div>
-      </div>
+          <li><div class="btn-group ">
+                <button type="button" class="btn  btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Membership <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://australiandiabetescouncil.wufoo.com/forms/w7x3k1/">Become a Member</a></li>
+                  <li><a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3w1/">Renew Membership</a></li>
+                  <li><a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3s5/">Change Membership Details</a>
+                  </li>
+                  <li><a href="http://www.australiandiabetescouncil.com/membership/fees">Membership Fees</a></li>
+                </ul>
+              </div>
+          <li><button type="button" class="btn  btn-success">Donate</button></li>
+        </ul>
+    </div>
       
-
-     <div class="col-md-3 hidden-xs pull-right">      
-        <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Membership <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="https://australiandiabetescouncil.wufoo.com/forms/w7x3k1/">Become a Member</a>
-                </li>
-                <li>
-                  <a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3w1/">Renew Membership</a>
-                </li>
-                <li>
-                  <a href="https://australiandiabetescouncil.wufoo.com/forms/z7x3s5/">Change Membership Details</a>
-                </li>
-                <li>
-                  <a href="http://www.australiandiabetescouncil.com/membership/fees">Membership Fees</a>
-                </li>
-              </ul>
-            </div>
-
-          <button type="button" class="btn btn-success">Donate</button>
-     </div>
-   
-    </div> <!--row end-->
-    </header>
-  </div>
-  <!-- end header-wrap -->
-
-  <div class="row">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -100,21 +73,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </button>
       </div>
 
-    <div class="col-md-offset-2 ">
-          <?php  /* menu */
-          wp_nav_menu( array(
-            'menu'              => 'primary',
-            'theme_location'    => 'primary-menu',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-            'walker'            => new wp_bootstrap_navwalker())
+    <div class="col-sm-offset-2">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+            <ul class="nav navbar-nav navbar-right col-sm-3 col-md-4">
+                <div class="search ">
+                    <div class="search-wrap">
+                        <form id="search-form" action="http://www.australiandiabetescouncil.com/search-results">
+                          <label for="q" id="search-label" class="screen-reader">Search</label>
+                          <input aria-labelledby="search-label" id="q" type="search" name="q" class="search-field" placeholder="Search" value="">
+                          <span class="search-icon"></span>
+                          <input type="button" id="search-button" value="Search" class="button search-button" onClick="window.location='http://ww.australiandiabetescouncil.com/search-results?q=' + this.form.q.value">
+                    </form>
+                    </div>
+                </div>                
+            </ul>
 
-        ); 
-      ?>
+            <div class="nav navbar-nav two-column-nav">
+              <li class="active" ><a href="http://www.australiandiabetescouncil.com/living-with-diabetes">H</a></li>
+                <li><a href="http://www.australiandiabetescouncil.com/living-with-diabetes">Education</a></li>
+                <li><a href="http://www.australiandiabetescouncil.com/blog/category/recipe/">Recipes</a></li>
+                <li><a href="http://shop.australiandiabetescouncil.com/">Shop</a></li>
+                <li><a href="http://www.australiandiabetescouncil.com/events">Programs</a></li>
 
+                <!-- top menu items only showing in mobile toggle menu -->
+                <li class="visible-xs"><a class="visible-xs" href="#">Membership</a></li>
+                <li class="visible-xs"><a class="visible-xs" href="#">Donate</a></li>
+                <li ><a class="visible-xs" href="#">Contact</a></li>
+                <li><a href="#footerlink">More <span class="caret"></span></a></li>
+
+            </div>
+      </div><!-- /.navbar-collapse -->
     </nav>
+  </header>
 </div>
+

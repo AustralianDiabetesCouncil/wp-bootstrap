@@ -10,32 +10,32 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active left">
-          <img src="http://placehold.it/1200x444/000000">
+          <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/1.jpg" data-adaptive-background='1'>
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn button-outline btn-lg" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="item next left">
-          <img src="http://placehold.it/1200x444/ffffff">
+          <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/2.jpg" data-adaptive-background='1'>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
+              <h1 class="test">Another example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn button-outline btn-lg" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="http://placehold.it/1200x444/666666">
+          <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/3.jpg" data-adaptive-background='1'>
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
+              <h1 class="test">One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn button-outline btn-lg" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -331,22 +331,7 @@
 
 <!-- Recipes end -->
 
-<br><br>
 
-<!-- Email Subscribe Offer Start --> 
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hear it First!</h1>
-        <p>Get on our mailing list to get the latest news</p>
-        <div class="input-group input-group-lg col-sm-6">
-            <input type="text" class="form-control">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Subscribe</button>
-            </span>
-          </div>
-      </div>
-    </div>
 
 <!-- Email Subscribe Offer End --> 
     

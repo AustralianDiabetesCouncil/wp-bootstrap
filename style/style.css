@@ -1,226 +1,44 @@
 /* New Menu and Footer Aug 2013 */
 html,body{
   /* background:#f7fbfd*/
+  font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
-img{
-  width: 100%;
-}
-
-.navbar {
-margin: 0px;
-border-radius: 0px;
-text-transform:uppercase;
-}
-
-.screen-reader{
- display:none
-}
-
-.main-nav-toggle{float:left;height:67px;display:none}  
-
-
-/*Events*/
-.datebox {
-  width: 25px;
-  margin: 0 5px;
-}
-
-.day {
-  font-size: 1.4em;
-}
-
-.media-body{
-  padding-top:3px;
-}
-
-.adclogo{
- background: url(../img/logo-desktop-2x.png) no-repeat ; 
- background-position: center;
- background-size: 120px 162px;
- width: 120px;
- height: 162px;
-}
-
-.secondary-menu{
-  padding-top:15px;
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-   .logo a{
-    background: url(../img/ADC-logox2.png) no-repeat ; 
+@media all and (max-width: 992px){
+   html,body{
+  font-size: 14px;
   }
 }
 
 
- /* trying to make events turn into 2 column on tablets but couldn't make it work*/
-@media (min-width: @screen-sm-min) { 
-  .eventcolumns
-  {
-  -moz-column-count:2; /* Firefox */
-  -webkit-column-count:2; /* Safari and Chrome */
-  column-count:2;
-  }
+.container img{
+  width:100%;
 }
 
-
-.carousel{
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  box-shadow:none
-}
-
-.header-wrap{
-  position:relative;
-  background:white;
-  z-index:2
-}
-
-
-
-#header{
-  height:66px;
-}
-
-
-
-.logo{
-  position:relative;
-  float:left;margin:0
-}
-
-.logo a{
-  position:relative;
-  text-indent:-9999px;
-  display:block;
-  width:98px;
-  height:67px;
-  background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile.png);
-  background-repeat:no-repeat;
-  background-position:0 center;
-  margin-left:30px;
-}
-
-@media (min-width: 992px){ 
-  .logo a{
-    height:162px;
-    width:120px;
-    background-color:transparent;
-    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-120.png);
-    background-position:center;
-  }
-
-  .logo{
-    position:absolute;
-  }
-
-  #main-nav #menu-main-menu{
-    margin-left:0
-  }
-  
-
-
-  }
-
-@media all and (max-width: 767px){
-  .logo a{
-    margin:0 auto
-  }
-}
-
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-  .logo a{
-    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile-2x.png);
-    background-repeat:no-repeat;
-    background-position:0 center;
-    background-size:98px 50px
-  }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), all and (min-resolution: 192dpi) and (min-width: 992px){
-  .logo a{background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-2x.png);
-    background-position:center;background-size:120px 162px}
-  }
-
- 
-
-  form{
+form{
     margin:0;
     position:relative;
     overflow:hidden
   }
 
 
-  .search-wrap{
-    position:relative;
-    max-width:510px;
+/* Search styling Aug 2013 */
 
-  }
-
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-  #q{
-        border:none;
-        padding:6px 10px
-      }
-      #q:focus{border:none}
-    }
-
-  .search-wrap{
-    margin:0 auto;
-    clear:both;
-    width:100%;
-    float:none;
-    max-width:100%
-
-    }
-
-   .header-wrap{
-      border-bottom:0;
-    }
-
-   .navbar-header{
-    z-index: 1000;
-    position: relative;
-    top: -55px;
-   }
+.screen-reader{
+ display:none
 }
 
+.search-wrap{
+  margin:0 auto;
+  padding: 5px 0;
+  clear:both;
+  width:100%;
+  float:none;
+  max-width:100%
+}
 
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
- }
-
-  #q{
-    -webkit-appearance:none;
-    box-shadow:none;
-    border:1px solid #ededed;
-    padding:10px 50px 10px 10px;
-    font-size:14px;
-    width:100%;
-    max-width:100%;
-    margin:0;
-    -webkit-transition:all 0.3s ease;
-    -moz-transition:all 0.3s ease;
-    -o-transition:all 0.3s ease;
-    transition:all 0.3s ease;
-    height:auto;line-height:1.3em;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box
-  }
-
-  #q:focus{
-    border:1px solid #cccccc;
-    outline:none;
-  }
-
-  #search-button{
+#search-button{
     background:#00bce9;
     }
 
@@ -260,12 +78,33 @@ text-transform:uppercase;
     text-indent:-9999px
   }
 
+ #q{
+    -webkit-appearance:none;
+    box-shadow:none;
+    border:1px solid #ededed;
+    padding:10px 50px 10px 10px;
+    font-size:14px;
+    width:100%;
+    max-width:100%;
+    margin:0;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    height:auto;line-height:1.3em;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+  }
+
+  #q:focus{
+    border:1px solid #cccccc;
+    outline:none;
+  }
 
   .search-wrap input[type="submit"],
   
-  
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   .search-icon{
     background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/search-icon-2x.png);
     background-size:15px;
@@ -275,7 +114,7 @@ text-transform:uppercase;
   }
   }
 
-/* Search styling Aug 2013 */
+
 .gsc-results-wrapper-nooverlay a[href*=australiandiabetescouncil.com/ADCCorporateSite/]:before{content:'PDF';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
 .gsc-results-wrapper-nooverlay a[href*=australiandiabetescouncil.com/blog]:before{content:'ARTICLE';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
 .gsc-results-wrapper-nooverlay a[href*=shop.australiandiabetescouncil.com]:before{content:'PRODUCT';position:relative;left:0;margin-right:10px;background:#0088b2;color:#FFF;text-decoration:none!important;top:-2px;font-size:10px;padding:4px 10px}
@@ -291,3 +130,202 @@ text-transform:uppercase;
 .gsc-cursor-page{-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);-moz-box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);box-shadow:0 2px 2px 0 rgba(0,0,0,0.03);-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;background:#f0f0f0!important;color:#666!important;padding:7px!important}
 .gs-image:before{content:'';display:none}
 /* End search styling Aug 2013 */
+
+
+
+/* Logo */
+
+.logo{
+  position:relative;
+  float:left;
+  margin:0 0 0 5%;
+  z-index: 2;
+}
+
+.logo a{
+  position:relative;
+  text-indent:-9999px;
+  display:block;
+  width:98px;
+  height:67px;
+  background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile.png);
+  background-repeat:no-repeat;
+  background-position:0 center;
+}
+
+
+
+@media (min-width: 768px){ 
+  .logo a{
+    height:162px;
+    width:120px;
+    background-color:transparent;
+    background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-120.png);
+    background-position:center;
+  }
+  .logo {
+    position:absolute;
+  }
+
+  .logo-overlap{
+    width:120px;
+    position:relative;
+  }
+  
+}
+
+
+@media all and (max-width: 992px){
+   .logo, .search-wrap{
+    margin-left:10px;
+  }
+
+}
+
+
+    /* Retina Display Logo */
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+       .logo a{
+        background: url(../img/ADC-logox2.png) no-repeat ; 
+      }
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+      .logo a{
+        background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-mobile-2x.png);
+        background-repeat:no-repeat;
+        background-position:0 center;
+        background-size:98px 50px
+      }
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), all and (min-resolution: 192dpi) and (min-width: 992px){
+      .logo a{background-image:url(http://www.australiandiabetescouncil.com/blog/wp-content/themes/ADC2/images/logo-desktop-2x.png);
+        background-position:center;background-size:120px 162px}
+      }
+
+/* Logo End */
+
+
+
+/* Header - Main Nav CSS */ 
+
+/* the wrap around the number, membership and donate buttons */
+.top-menu{
+  padding:6px 25px;
+  height:60px;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+.header{
+  position:relative;
+  background:white;
+  border-bottom:0;
+  z-index:2;
+  padding-top:10px;
+  height:60px;
+}
+
+.navbar-toggle {
+margin:16px 10px;
+outline:none;
+}
+
+.navbar-static-top {
+z-index: 1;
+border: 0;
+}
+
+
+@media (max-width: 767px){ 
+  /*added to fix the menu in mobile view */
+  .two-column-nav{
+  margin: 0;
+  -moz-column-count:2; /* Firefox */
+  -webkit-column-count:2; /* Safari and Chrome */
+  column-count:2;
+  }
+
+  .navbar-nav li{
+    background-color: #ededed;
+    border-bottom:1px solid #ccc;
+  }
+
+}
+
+.contact-number{
+  position: relative;
+  top: 3px;
+}
+/* Header - Main Nav CSS End */ 
+
+
+
+
+/* Footer  */ 
+
+footer{
+  padding:20px 0 80px;
+}
+
+
+/* Footer End */ 
+
+
+/* Rotating Banner */
+
+.banner-image{
+  margin:0 auto;
+}
+
+.button-outline{
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(205, 191, 227);
+  width: auto;
+  color:#fff;
+}
+
+.background--light {
+  color: black;
+  background-color:white;
+}
+
+.background--dark {
+  color: white;
+  background-color:black;
+}
+
+.carousel-caption {
+  text-align:left;
+}
+
+/* Event Listing Start */
+
+.datebox {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.day {
+  font-size: 1.4em;
+}
+
+.media-body{
+  padding-top:3px;
+}
+
+
+@media (max-width: 991px){ 
+  .eventcolumns
+  {
+  -moz-column-count:2; /* Firefox */
+  -webkit-column-count:2; /* Safari and Chrome */
+  column-count:2;
+  }
+}
+/* Event Listing End */
+
