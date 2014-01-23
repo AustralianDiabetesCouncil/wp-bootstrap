@@ -331,3 +331,44 @@ footer{
 }
 /* Event Listing End */
 
+
+
+/*Category Pages for Recipes and Education */ 
+
+.page-head, .page-pagination{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.page-head a{
+  white-space: nowrap;
+}
+
+.thumbnail {
+  border-radius: 0px;
+}
+
+.thumbnail .post-title{
+  margin-top:10px;
+}
+
+.post-meta {
+padding: 10px;
+margin-bottom: 0;
+border-top: 1px solid rgb(222, 222, 222);
+position: relative;
+overflow: hidden;
+}
+
+.post-meta .author {
+position: relative;
+float: left;
+}
+
+.post-meta .date {
+position: relative;
+float: right;
+}
+
+
+
