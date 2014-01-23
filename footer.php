@@ -19,7 +19,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-sm-3 col-sm-6">
         <h3>More</h3>
         <ul class="list-unstyled ">
           <li><a href="#">About Us </a></li>
@@ -35,7 +35,7 @@
         </ul>
       </div>
       
-      <div class="col-md-3 col-sm-6">
+      <div class="col-sm-3 col-sm-6">
       <h3>Follow Us</h3>
         <ul class="list-unstyled ">
           <li><a href="#">Facebook</a></li>
@@ -50,7 +50,7 @@
         </ul>
       </div>
 
-      <div class="col-md-3 col-sm-6">
+      <div class="col-sm-3 col-sm-6">
       <h3>Other Websites</h3>
         <ul class="list-unstyled">
           <li><a href="#">Vitality Workplace Health </a></li>
@@ -60,7 +60,7 @@
         </ul>
       </div>
 
-      <div class="col-md-3 col-sm-6">
+      <div class="col-sm-3 col-sm-6">
         <img src="<?php echo get_template_directory_uri(); ?>/img/asharedvoice.png">
       </div>
 </div>
@@ -82,12 +82,13 @@
 
 
 
-
+    <!-- JQuery and Bootstrap are downloaded from CDN with fallbacks to downloadn from website - taken from HTML5 Boilerplate -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jbootstrap.min.js"><\/script>')</script>
+
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
@@ -97,11 +98,11 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $.adaptiveBackground.run({
-          normalizeTextColor: true
         })
       });
       </script>
     <!-- jquery.adaptive-backgrounds.js End-->
+
 
 
     <script>

@@ -20,9 +20,6 @@
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/style.css"> 
 
-
-  
-
 </head>
 
 
@@ -90,11 +87,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
 
             <div class="nav navbar-nav two-column-nav">
-              <li class="active" ><a href="http://www.australiandiabetescouncil.com/living-with-diabetes">H</a></li>
-                <li><a href="http://www.australiandiabetescouncil.com/living-with-diabetes">Education</a></li>
-                <li><a href="http://www.australiandiabetescouncil.com/blog/category/recipe/">Recipes</a></li>
+              <li class="active" ><a href="/">H</a></li>
+                <li><a href="http://localhost:8888/adcwebsite/wp-content/themes/wp-bootstrap/prototype-blog-category.php">Education</a></li>
+                <li><a href="http://localhost:8888/adcwebsite/wp-content/themes/wp-bootstrap/prototype-recipe-category.php">Recipes</a></li>
                 <li><a href="http://shop.australiandiabetescouncil.com/">Shop</a></li>
-                <li><a href="http://www.australiandiabetescouncil.com/events">Programs</a></li>
+                <li><a href="http://localhost:8888/adcwebsite/wp-content/themes/wp-bootstrap/prototype-programs-category.php">Programs</a></li>
 
                 <!-- top menu items only showing in mobile toggle menu -->
                 <li class="visible-xs"><a class="visible-xs" href="#">Membership</a></li>

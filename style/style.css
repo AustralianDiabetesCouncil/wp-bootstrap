@@ -211,9 +211,10 @@ form{
 
 /* Header - Main Nav CSS */ 
 
-/* the wrap around the number, membership and donate buttons */
+/* top-menu is the wrap around the number, membership and donate buttons */
+
 .top-menu{
-  padding:6px 25px;
+  padding:8px 10px;
   height:60px;
 }
 
@@ -242,12 +243,12 @@ border: 0;
 
 
 @media (max-width: 767px){ 
-  /*added to fix the menu in mobile view */
+  /*mobile view 2 column nav*/
   .two-column-nav{
-  margin: 0;
-  -moz-column-count:2; /* Firefox */
-  -webkit-column-count:2; /* Safari and Chrome */
-  column-count:2;
+    margin: 0;
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
+    column-count:2;
   }
 
   .navbar-nav li{
@@ -261,6 +262,7 @@ border: 0;
   position: relative;
   top: 3px;
 }
+
 /* Header - Main Nav CSS End */ 
 
 
@@ -269,15 +271,16 @@ border: 0;
 /* Footer  */ 
 
 footer{
-  padding:20px 0 80px;
+  padding:20px 0 60px;
 }
 
 
 /* Footer End */ 
 
 
-/* Rotating Banner */
 
+
+/* Rotating Banner */
 .banner-image{
   margin:0 auto;
 }
@@ -289,19 +292,18 @@ footer{
   color:#fff;
 }
 
-.background--light {
-  color: black;
-  background-color:white;
-}
-
-.background--dark {
-  color: white;
-  background-color:black;
-}
-
 .carousel-caption {
   text-align:left;
 }
+
+.carousel-title{
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(0, 188, 233, 0.8);
+  font-weight: 200;
+}
+/* Rotating Banner End */
+
 
 /* Event Listing Start */
 
