@@ -87,8 +87,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
 
             <div class="nav navbar-nav two-column-nav">
-              <li ><a href="/adcwebsite/">H</a></li>
-<!DOCTYPE html>
+              <li ><a href="/adcwebsite/"><span class="glyphicon glyphicon-home"></span>
+</a></li>
                 <li><a href="/adcwebsite/?page_id=27">Education</a></li>
                 <li><a href="/adcwebsite/?page_id=40">Recipes</a></li>
                 <li><a href="http://shop.australiandiabetescouncil.com/">Shop</a></li>

@@ -22,6 +22,8 @@ get_header(); ?>
    <li><a class="btn" href="/adcwebsite/?page_id=27">Category 8 <span class="badge">64</span></a></li>
    <li><a class="btn" href="/adcwebsite/?page_id=27">Category 9 <span class="badge">36</span></a></li>
    <li><a class="btn" href="/adcwebsite/?page_id=45">Tags <span class="badge">142</span></a></li>
+    <li><a class="btn" href="/adcwebsite/?page_id=62">Resources by type <span class="badge">142</span></a></li>
+
   </ul>  
   
   <hr>
