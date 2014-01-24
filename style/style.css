@@ -1,15 +1,10 @@
 /* New Menu and Footer Aug 2013 */
-html,body{
+body{
   /* background:#f7fbfd*/
   font-size: 16px;
-  letter-spacing: 0.2px;
+
 }
 
-@media all and (max-width: 992px){
-   html,body{
-  font-size: 14px;
-  }
-}
 
 
 .container img{
@@ -370,5 +365,22 @@ position: relative;
 float: right;
 }
 
+.page-head-menu > li {
+  margin-bottom: 10px;
+}
 
+.page-head-menu > li > a{
+  padding:10px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+
+/*Blog Page*/
+
+.breadcrumb{
+  background: none ;
+  padding: 0;
+  margin:10px 0 0 0;
+  position: relative;
+}
 

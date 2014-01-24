@@ -2,25 +2,29 @@
 /* Template Name: Blog Category */
 get_header(); ?>
 
+
+
 <div class="container page-head">
 
-  <h1>Diabetes Education</h1>
-
-  <ul class="list-inline">
-    <li><a class="active"  href="#">All Articles <span class="badge">152</span></a> |</li>
-   <li><a href="#">Category 1 <span class="badge">42</span></a> |</li>
-   <li><a href="#">Category 2 <span class="badge">64</span></a> |</li>
-   <li><a href="#">Category 3 <span class="badge">36</span></a> |</li>
-   <li><a href="#">Tags <span class="badge">142</span></a> <!-- tags --></li>
-  </ul>
+  <h1>Education</h1>
+    
+  
 
 
-   
+  <ul class="list-inline page-head-menu">
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 1 <span class="badge">42</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 2 <span class="badge">64</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 3 <span class="badge">36</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 4 <span class="badge">42</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 5 <span class="badge">64</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 6 <span class="badge">36</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 7 <span class="badge">42</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 8 <span class="badge">64</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 9 <span class="badge">36</span></a></li>
+   <li><a class="btn" href="/adcwebsite/?page_id=45">Tags <span class="badge">142</span></a></li>
+  </ul>  
+  
   <hr>
-
-   
-
-
 </div>
 
 

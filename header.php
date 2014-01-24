@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
 
             <div class="nav navbar-nav two-column-nav">
-              <li class="active" ><a href="/adcwebsite/">H</a></li>
+              <li ><a href="/adcwebsite/">H</a></li>
 <!DOCTYPE html>
                 <li><a href="/adcwebsite/?page_id=27">Education</a></li>
                 <li><a href="/adcwebsite/?page_id=40">Recipes</a></li>
@@ -102,7 +102,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             </div>
       </div><!-- /.navbar-collapse -->
+
     </nav>
+
   </header>
 </div>
 
