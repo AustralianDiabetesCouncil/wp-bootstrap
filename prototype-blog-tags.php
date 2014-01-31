@@ -2,21 +2,50 @@
 /* Template Name: Blog Tags */
 get_header(); ?>
 
-<div class="container">
-  
-
-
-<div class="container page-head">
-  <h1>Education</h1>
-  
+<!-- breadcrumbs start -->
+<div class="col-sm-offset-2">
   <ol class="breadcrumb">
     <li><a href="/adcwebsite/">Home</a></li>
     <li><a href="/adcwebsite/?page_id=27">Education</a></li>
     <li class="active">Tags</li>
   </ol>
-
 </div>
+<!-- breadcrumbs end -->
 
+
+
+<div class="container page-head">
+
+  <h1>Education Tags</h1>
+  
+  <!-- filter section -->
+  <div class="btn-group">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Categories
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="btn" href="/adcwebsite/?page_id=27">All<span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 1 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 2 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 3 <span class="badge">36</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 4 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 5 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 6 <span class="badge">36</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 7 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 8 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 9 <span class="badge">36</span></a></li>
+      </ul>
+    </div>
+
+    <a href="/adcwebsite/?page_id=45" class="btn btn-default">Tags</a>
+    <a href="/adcwebsite/?page_id=62" class="btn btn-default">Resources</a>
+  </div>
+
+  <!-- filter section end -->
+  <hr>
+</div>
 
 
 <div class="container">

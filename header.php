@@ -12,6 +12,9 @@
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
+  <!-- fontello -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/fontello-b46597aa/css/fontello.css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <h1 class="logo"><a href="http://www.australiandiabetescouncil.com">Australian Diabetes Council</a></h1>
 
-  <header id="header">
+  <header id="header" class="hidden-print">
   
     <div class="hidden-xs top-menu ">
         <ul class="list-inline pull-right">
@@ -59,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </ul>
     </div>
       
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top"  role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

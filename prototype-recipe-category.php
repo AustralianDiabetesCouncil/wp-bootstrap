@@ -25,7 +25,7 @@ get_header(); ?>
   <div class="row">
 
         
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -45,7 +45,7 @@ get_header(); ?>
 
 
 
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -62,7 +62,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -79,7 +79,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -96,7 +96,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -113,7 +113,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -130,7 +130,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -147,7 +147,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -164,7 +164,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -181,7 +181,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -198,7 +198,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">
@@ -215,7 +215,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=42"><img src="http://placehold.it/459x289&text=Recipe Image"></a>
               <div class="caption">

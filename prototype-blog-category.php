@@ -3,37 +3,81 @@
 get_header(); ?>
 
 
+<!-- breadcrumbs start -->
+<div class="col-sm-offset-2">
+  <ol class="breadcrumb">
+    <li><a href="/adcwebsite/">Home</a></li>
+    <li class="active">Education</li>
+  </ol>
+</div>
+<!-- breadcrumbs end -->
+
+
 
 <div class="container page-head">
 
-  <h1>Education</h1>
+  <h1>All Education Articles </h1>
+  
+  <!-- filter section -->
+  <div class="well">
+    329 articles |
     
-  
+    Sort by
+    <a href="/adcwebsite/?page_id=45" class="btn btn-default">Tags</a>
 
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+         Type 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a  href="/adcwebsite/?page_id=27">Recently Added</a></li>
+        <li><a  href="/adcwebsite/?page_id=27">Most Likes</a></li>
+        <li><a  href="/adcwebsite/?page_id=27">Most Comments</a></li>
+      </ul>
+    </div>
 
-  <ul class="list-inline page-head-menu">
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 1 <span class="badge">42</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 2 <span class="badge">64</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 3 <span class="badge">36</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 4 <span class="badge">42</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 5 <span class="badge">64</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 6 <span class="badge">36</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 7 <span class="badge">42</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 8 <span class="badge">64</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=27">Category 9 <span class="badge">36</span></a></li>
-   <li><a class="btn" href="/adcwebsite/?page_id=45">Tags <span class="badge">142</span></a></li>
-    <li><a class="btn" href="/adcwebsite/?page_id=62">Resources by type <span class="badge">142</span></a></li>
+    <form>
+      <label>Sort by:</label>
+        <select name="type">
+        <option value="All">Recently Added</option>
+        <option value=" ">Most Likes</option>
+        <option value=" ">Most Comments</option>
+        </select></form>
 
-  </ul>  
-  
+    <a href="/adcwebsite/?page_id=45" class="btn btn-default">Tags</a>
+    <a href="/adcwebsite/?page_id=62" class="btn btn-default">Resources</a>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+         All 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 1 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 2 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 3 <span class="badge">36</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 4 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 5 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 6 <span class="badge">36</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 7 <span class="badge">42</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 8 <span class="badge">64</span></a></li>
+        <li><a class="btn" href="/adcwebsite/?page_id=27">Category 9 <span class="badge">36</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- filter section end -->
   <hr>
 </div>
 
 
 
+
 <div class="container">
   <div class="row">    
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -53,7 +97,7 @@ get_header(); ?>
 
 
 
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -70,7 +114,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -87,7 +131,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -104,7 +148,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -121,7 +165,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -138,7 +182,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -155,7 +199,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -172,7 +216,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -189,7 +233,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -206,7 +250,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">
@@ -223,7 +267,7 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 limit-max-width">
             <div class="thumbnail">
                 <a href="/adcwebsite/?page_id=30"><img src="http://placehold.it/459x289&text=Article Image"></a>
               <div class="caption">

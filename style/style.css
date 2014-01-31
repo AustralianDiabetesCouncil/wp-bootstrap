@@ -5,8 +5,6 @@ body{
 
 }
 
-
-
 .container img{
   width:100%;
 }
@@ -17,6 +15,13 @@ form{
     overflow:hidden
   }
 
+
+  /* max width controller for boxes with images*/
+
+  .limit-max-width{
+    margin: 0 auto;
+    max-width: 390px;
+  }
 
 /* Search styling Aug 2013 */
 
@@ -177,7 +182,6 @@ form{
 
 }
 
-
     /* Retina Display Logo */
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
@@ -332,7 +336,7 @@ footer{
 
 .page-head, .page-pagination{
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .page-head a{
@@ -375,15 +379,21 @@ float: right;
   border:1px solid #ccc;
 }
 
+.dropdown-menu{
+  text-align: left;
+}
+
 /*Blog Page*/
 
 .breadcrumb{
   background: none ;
-  padding: 0;
-  margin:10px 0 0 0;
-  position: relative;
 }
 
 .resources-title{
   margin-top:70px;
 }
+
+.soundcloud-frame{
+  margin:16px 0;
+}
+

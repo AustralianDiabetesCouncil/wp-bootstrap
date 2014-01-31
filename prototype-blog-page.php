@@ -2,45 +2,65 @@
 /* Template Name: Blog Page */
 get_header(); ?>
 
-<!--
+<!-- full screen image
 <div class="header-image" style="text-align:center;">
   <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/5.jpg" data-adaptive-background='1'>
 </div>
 --> 
 
-  <br>
-    <br>
+<!-- breadcrumbs start -->
+<div class="col-sm-offset-2">
+  <ol class="breadcrumb">
+    <li><a href="/adcwebsite/">Home</a></li>
+    <li><a href="/adcwebsite/?page_id=27">Education</a></li>
+    <li class="active">Category Name</li>
+  </ol>
+</div>
+<!-- breadcrumbs end -->
+
+
 
 <div class="container">
-  <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Education</a></li>
-    <li class="active">Category 1</li>
-  </ol>
-
   <h1>Living with Diabetes</h1>
+  
   <p><em>Posted 2 days ago by </em><strong> <a href="#author">Lamees Kaoutarani</a></strong></p>
 
-  <div> <!-- article tags-->
-    <a class="btn btn-sm btn-default" href="#">Tag 1</a>
-    <a class="btn btn-sm btn-default" href="#">Tag 2</a>
-    <a class="btn btn-sm btn-default" href="#">Tag 3</a>
-    <a class="btn btn-sm btn-default" href="#">Tag 4</a>
-  </div>
-
-  <hr>
-
+    <!-- share / print / bookmark start --> 
+      <div>
+        <button class="btn btn-default" onclick="printPage()"><span class="glyphicon glyphicon-print"></span> <span class="hidden-xs">Print</span></button>
+        <a href="#comments-disqus" class="btn btn-default"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs">Comment</span></a>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-thumbs-up"></i> <span class="caret"></span> <span class="hidden-xs">Share</span>  
+          </button>
+          
+          <ul class="dropdown-menu">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Google Plus</a></li>
+            <li><a href="#">Copy Link</a></li>
+          </ul>
+        </div>
+      </div>
+    <!-- share / print / bookmark end --> 
+</div>
+  
+<hr>
  
+<div class="container">
   <div class="row">
     <div class="col-md-8 col-lg-7">
       <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/5.jpg">
-        <br>
-        <br>
+      
 
- <!-- soundcloud-->
-  <iframe frameborder="no" height="100" scrolling="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F78220213" width="100%"></iframe>
-    <br>
-    <br>
+       <!-- soundcloud - manuall adjusted the height to 100-->
+        <div class="soundcloud-frame">
+        <iframe frameborder="no" height="100" scrolling="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F78220213" width="100%"></iframe>
+        <!-- sound cloud end --> 
+        </div>
+
 
           <p class="lead">Diabetes is a lifelong condition. There are times when people with diabetes need some extra advice, have questions or have problems they can’t manage on their own. It is reassuring to know that there are many specially trained professionals to assist people with diabetes to better health.</p>
           <strong>The team:</strong></p>
@@ -59,8 +79,21 @@ get_header(); ?>
           </blockquote>
           <p>
             Other specialists are sometimes needed. Children with diabetes may see a paediatrician or a paediatric endocrinologist. Women with diabetes who are planning a pregnancy, who are pregnant or women who develop gestational diabetes usually see an obstetrician. If complications of diabetes are present, referral to other kinds of health professionals may be required.</p>
-          
+     
+       <div> <!-- article tags-->
+          <a class="btn btn-sm btn-default" href="#"><span class="glyphicon glyphicon-tag"></span> Tag 1</a>
+          <a class="btn btn-sm btn-default" href="#"><span class="glyphicon glyphicon-tag"></span> Tag 2</a>
+          <a class="btn btn-sm btn-default" href="#"><span class="glyphicon glyphicon-tag"></span> Tag 3</a>
+          <a class="btn btn-sm btn-default" href="#"><span class="glyphicon glyphicon-tag"></span> Tag 4</a>
+        </div>
+
       </div>
+<!-- Article End --> 
+
+
+
+
+
 
       <aside>
       <div class="col-lg-offset-1 col-md-4">       
@@ -77,7 +110,7 @@ get_header(); ?>
 
           <hr> 
 
-          <div class="col-sm-6 col-md-12">
+          <div class="col-sm-6 col-md-12 limit-max-width">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Featured Product</h3>
@@ -91,10 +124,9 @@ get_header(); ?>
             </div>
         </div>
 
-      
-         <br>
 
-          <div class="col-sm-6 col-md-12">
+
+          <div class="col-sm-6 col-md-12" >
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Need to speak to a Health Professional?</h3>
@@ -106,10 +138,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        
-
       </aside>
-            
   </div>
 
 
@@ -117,6 +146,7 @@ get_header(); ?>
 </div>
 
 
+<a name="comments-disqus"></a>
 
 <div class="container">
   <hr> <h2>

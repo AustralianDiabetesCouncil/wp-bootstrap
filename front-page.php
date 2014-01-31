@@ -45,7 +45,7 @@
 
 
         <div class="item">
-          <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/4.jpg" data-adaptive-background='1'>
+          <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/banner-images/5.jpg" data-adaptive-background='1'>
           <div class="container">
             <div class="carousel-caption">
               <h1 class="carousel-title">Cook this Recipe</h1>

@@ -3,7 +3,6 @@ wp-bootstrap
 Australian Diabetes Council website theme forked from "Wordpress Bootstrap 3 Starter" by -Ben ben@hillfold.com
 
 
-============
 Notes
 ============
 
@@ -12,7 +11,7 @@ Notes
 - jquery.adaptive-backgrounds.js is used to colour the background 
 
 
-============
+
 To do's
 ============
 
@@ -38,7 +37,7 @@ Content
 - Migrate add to home.js from the current website
 
 Soundcloud
-- Make a field in all education articles to embed a soundcloud file. These files should be listed under resouces by type: audio
+- Make a field in all education articles to embed a soundcloud files. These files should be listed under resouces by type: audio
 
 
 Widgets
